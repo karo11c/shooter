@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap");
+
+:root {
+  --bg: #0b0e14;
+  --panel: #121826;
+  --accent: #f4d35e;
+  --ink: #e7edf4;
+  --muted: #9ab0c7;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(1200px 600px at 20% 10%, #1b2535, #0b0e14 60%);
+  color: var(--ink);
+  font-family: "Press Start 2P", "VT323", monospace;
+  min-height: 100vh;
+}
+
+.wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px 16px 48px;
+}
+
+header h1 {
+  margin: 0 0 8px;
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+
+header p {
+  margin: 0 0 20px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+main {
+  background: linear-gradient(160deg, #121826, #0d1220);
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.4);
+  position: relative;
+}
+
+canvas {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 2px solid #202838;
+  background: #0e1322;
+  image-rendering: pixelated;
+}
+
+.hud {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+#status {
+  color: var(--accent);
+}
+
+footer {
+  margin-top: 16px;
+  color: var(--muted);
+  font-size: 11px;
+}
